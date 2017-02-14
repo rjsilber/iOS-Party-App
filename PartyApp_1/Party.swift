@@ -42,6 +42,7 @@ class Party: NSObject {
     }
     
     
+    
     /* Proj Requirements: Parties should be saved and fetched using UserDefaults.
      Party.swift class will need to be tweaked to make it easily saveabl/fetchable
      to UserDefaults.

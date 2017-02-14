@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  PartyApp_1
-//
-//  Created by Robyn J. Silber on 2/13/17.
-//  Copyright © 2017 RobynSilber. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
@@ -16,6 +8,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // TODO: if any data has been persisted, this is the place to add code to access PartiesTableViewController and set its partyStore property to be equal to an array of persisted Party instances
+        
+        // TODO: replace the following:
+        // for now: create the PartyStore:
+        let partyStore = PartyStore()
+        // get PartiesTableViewController; set its PartyStore property:
+        let partiesTableViewController = window!.rootViewController as! PartiesTableViewController
+        partiesTableViewController.partyStore = partyStore
+        
         return true
     }
 
