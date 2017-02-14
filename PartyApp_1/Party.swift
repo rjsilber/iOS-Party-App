@@ -9,7 +9,7 @@ In AddPartyViewController, as per the project instructions, if the user leaves e
  */
 
 
-// make Party a subclass of NSObject so that Party inherits from the same superclass (or indirectly) as the UI objects such as UIView and UIViewController
+// make Party a subclass of NSObject so that Party inherits directly/indirectly from the same base class, NSObject, as the UI objects, such as UIView and UIViewController.
 class Party: NSObject {
     // Party class includes four stored properties:
     let id: String
