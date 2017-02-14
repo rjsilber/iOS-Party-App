@@ -24,10 +24,9 @@ class Party: NSObject {
     /* An @IBAction method will be triggered as a result of the user adding the properties to create a new Party followed by tapping on the Save button. The Party initializer that gets called as a result will expect to receive the data entered by the user to instantiate the Party object, as well as the id String. */
     
     /* This declares a custom designated initializer for creating an instance of Party. The caller to this method must check first to ensure that all the args passed in (specifically, date) have non-nil values. */
-    init(id: String/*TODO:...*/, name: String, date: Date?, address: String){ // Party class initializer
+    init(name: String, address: String, date: Date?){ // Party class initializer
         /* Designated initializer - the HBIC initializer for the Party class that: makes sure all the Party properties are assigned a value and that the Party class's superclass's initializer is called, if it has an initializer method. */
-//        id = UUID().uuidString <--- better to have this code executes prior to here, and pass it in as one of the args. <-- actually may be better to do here. TODO: reevaluate this decision in a bit.
-        self.id = id // self like 'this' in Java - used when the arg and param share the same identifier
+        id = UUID().uuidString
         self.name = name
         self.address = address
         startDate = date
@@ -37,9 +36,9 @@ class Party: NSObject {
     
     
     /* Since startDate is of type Date?, a convenience initializer is also required for initializing new instance of Party if the user clicks the Save button in AddPartyViewController without selecting a date/time from UIDatePicker. */
-    convenience init(id: String/*TODO:...*/, name: String, address: String){
+    convenience init(name: String, address: String){
         
-        self.init(id: id, name: name, date: nil, address: address) // calls designated Party initializer
+        self.init(name: name, address: address, date: nil) // calls designated Party initializer
     }
     
     
