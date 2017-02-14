@@ -10,5 +10,8 @@ import UIKit
 
 class PartiesTableViewController: UITableViewController {
     
+    // a UITableViewController's (or subclass's) view is instance of UITable.
+    /* Each row in the table view displays the data of an item (an instance of Party - a model object). */
+    
 
 }
