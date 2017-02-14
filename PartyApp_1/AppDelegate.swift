@@ -11,12 +11,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // TODO: if any data has been persisted, this is the place to add code to access PartiesTableViewController and set its partyStore property to be equal to an array of persisted Party instances
         
+        
+        
+        
         // TODO: replace the following:
         // for now: create the PartyStore:
         let partyStore = PartyStore()
         // get PartiesTableViewController; set its PartyStore property:
         let partiesTableViewController = window!.rootViewController as! PartiesTableViewController
         partiesTableViewController.partyStore = partyStore
+        
+        
+        
         
         return true
     }

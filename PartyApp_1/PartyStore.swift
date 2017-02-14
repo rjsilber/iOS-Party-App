@@ -21,12 +21,7 @@ class PartyStore { // defines the PartyStore class as a base class.
             let date = dp.date // retrieves the Date value associated with datePicker
             newParty = Party(name: name, address: address, date: date) // calls designated Party initializer
             
-            // Code for formattng the model data for the rows into a String:
-//            let dateFormatter = DateFormatter()
-//            dateFormatter.dateFormat = "hh:mm a, MM/dd"
-//            let dateStr = dateFormatter.string(from: date)
-//            let partyStr: String = "\(name) - \(dateStr)"
-//            print(partyStr)
+
         
         } else{
             // datePicker nil
