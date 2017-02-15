@@ -10,6 +10,30 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="bCm-Em-d0L">
+            <objects>
+                <viewController id="KgP-qr-Rhp" customClass="MapViewController" customModule="PartyApp_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j9b-76-Sb2"/>
+                        <viewControllerLayoutGuide type="bottom" id="wzc-Dr-KKl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hzL-uf-sLt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="XMh-bx-nam">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="es9-L7-fyE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="962" y="-774"/>
+        </scene>
         <!--Parties Table View Controller-->
         <scene sceneID="uhD-rG-rqL">
             <objects>
@@ -97,6 +121,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieg-lv-IsZ">
                                 <rect key="frame" x="51" y="589" width="48" height="30"/>
                                 <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <segue destination="DgW-XX-Iii" kind="show" id="ks6-fq-H2c"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Party Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XFm-Um-aLP">
                                 <rect key="frame" x="31" y="75" width="315" height="30"/>
@@ -104,14 +131,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Enter Address" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsv-qN-s1f">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Enter Address" translatesAutoresizingMaskIntoConstraints="NO" id="bsv-qN-s1f">
                                 <rect key="frame" x="40" y="436" width="295" height="70"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="rfr-aH-te4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
                                 <dataDetectorType key="dataDetectorTypes" address="YES"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVD-Q4-t5W">
@@ -139,6 +166,11 @@
                             <constraint firstItem="XFm-Um-aLP" firstAttribute="top" secondItem="dX4-eI-qHP" secondAttribute="bottom" constant="26" id="zzg-xf-4ty"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="EnterPartyTextView" destination="XFm-Um-aLP" id="Y0Q-Q0-hzf"/>
+                        <outlet property="addressTextField" destination="bsv-qN-s1f" id="H7Z-Qd-Pie"/>
+                        <outlet property="datePicker" destination="Tu1-ME-nYb" id="01K-2j-9A6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="49L-Sw-trZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
