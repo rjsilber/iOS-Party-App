@@ -26,6 +26,9 @@
                                     <rect key="frame" x="309" y="30" width="46" height="30"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                     <state key="normal" title="+"/>
+                                    <connections>
+                                        <segue destination="WgF-rF-gSa" kind="presentation" id="aIh-bd-Vb0"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
