@@ -2,12 +2,19 @@ import UIKit
 
 class PartiesTableViewController: UITableViewController {
     
+        
     // a UITableViewController's (or subclass's) view is instance of UITable.
     /* Each row in the table view displays the data of an item (an instance of Party - a model object). */
     
     // PartiesTableViewController has optional access to PartyStore and its property allParties
     var partyStore: PartyStore! // the data source
-    /* PartyStore declared as a property in the VC to decouple the layers and for easier code maintainability. PartiesTableViewController just receives the store - an array of Party objects, keeping things simple. */
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+    }
     
     // For now, checks the count of the allParties array of partyStore; returns number of rows TODO: later, will use UserDefaults
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -18,6 +25,9 @@ class PartiesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // create a UITableViewCell instance; set appearance to default
         let cell = UITableViewCell(style: .default, reuseIdentifier: "UITableViewCell")
+        
+        /* To reuse cells, use the code below instead of the code above for constant cell */
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
         
 
         

@@ -5,9 +5,8 @@ import UIKit
 // TODO: maybe potentially just declare this class in Party.swift instead of its own file? Note to self: look into whether using special access modifiers (or lack thereof) will still allow PartiesTableViewController to access the PartyStore class.
 class PartyStore { // defines the PartyStore class as a base class.
     // property for storing the array of Party instances
-    var allParties = [Party]() // TODO: persist the data
+    var allParties: [Party] = [] // TODO: persist the data
     
-    var allPartyStrings = [String]()
     
     @discardableResult func createParty(name: String, address: String, datePicker: UIDatePicker?) -> Party {
         // first, use optional binding to determine whether datePicker has a value or is nil

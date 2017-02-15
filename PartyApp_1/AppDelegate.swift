@@ -13,13 +13,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         
+         // TODO: replace the following:
+         // for now: create the PartyStore:
+         let partyStore = PartyStore()
+         // get PartiesTableViewController; set its PartyStore property:
+         let partiesTableViewController = window!.rootViewController as! PartiesTableViewController
+         partiesTableViewController.partyStore = partyStore
+
         
-        // TODO: replace the following:
-        // for now: create the PartyStore:
-        let partyStore = PartyStore()
-        // get PartiesTableViewController; set its PartyStore property:
-        let partiesTableViewController = window!.rootViewController as! PartiesTableViewController
-        partiesTableViewController.partyStore = partyStore
+        
         
         
         
