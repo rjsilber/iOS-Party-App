@@ -14,6 +14,7 @@
 		6D07DD2A1E525FAD00AC4D48 /* PartyApp_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D07DD291E525FAD00AC4D48 /* PartyApp_1Tests.swift */; };
 		6D07DD351E525FAD00AC4D48 /* PartyApp_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D07DD341E525FAD00AC4D48 /* PartyApp_1UITests.swift */; };
 		6D07DD431E52706600AC4D48 /* PartiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D07DD421E52706600AC4D48 /* PartiesTableViewController.swift */; };
+		6D2254A41E53F33B0003F702 /* AddPartyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2254A31E53F33B0003F702 /* AddPartyViewController.swift */; };
 		6D340CB31E52D6A500F6ECFD /* Party.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D340CB21E52D6A500F6ECFD /* Party.swift */; };
 		6D428FD41E5328440053366E /* PartyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D428FD31E5328440053366E /* PartyStore.swift */; };
 		6D428FD61E53D0E00053366E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D428FD51E53D0E00053366E /* MapViewController.swift */; };
@@ -50,6 +51,7 @@
 		6D07DD341E525FAD00AC4D48 /* PartyApp_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyApp_1UITests.swift; sourceTree = "<group>"; };
 		6D07DD361E525FAD00AC4D48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D07DD421E52706600AC4D48 /* PartiesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartiesTableViewController.swift; sourceTree = "<group>"; };
+		6D2254A31E53F33B0003F702 /* AddPartyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPartyViewController.swift; sourceTree = "<group>"; };
 		6D340CB21E52D6A500F6ECFD /* Party.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Party.swift; sourceTree = "<group>"; };
 		6D428FD31E5328440053366E /* PartyStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyStore.swift; sourceTree = "<group>"; };
 		6D428FD51E53D0E00053366E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				6D340CB21E52D6A500F6ECFD /* Party.swift */,
 				6D428FD31E5328440053366E /* PartyStore.swift */,
 				6D428FD51E53D0E00053366E /* MapViewController.swift */,
+				6D2254A31E53F33B0003F702 /* AddPartyViewController.swift */,
 			);
 			path = PartyApp_1;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				6D340CB31E52D6A500F6ECFD /* Party.swift in Sources */,
 				6D428FD61E53D0E00053366E /* MapViewController.swift in Sources */,
 				6D07DD151E525FAD00AC4D48 /* AppDelegate.swift in Sources */,
+				6D2254A41E53F33B0003F702 /* AddPartyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,10 +9,17 @@ class PartiesTableViewController: UITableViewController {
     // PartiesTableViewController has optional access to PartyStore and its property allParties
     var partyStore: PartyStore! // the data source
     
+    @IBAction func addNewParty(_ sender: UIButton) {
+    
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let heightStatusBar = UIApplication.shared.statusBarFrame.height
+        let insets = UIEdgeInsets(top: heightStatusBar, left: 0, bottom: 0, right: 0)
+        tableView.contentInset = insets
+        tableView.scrollIndicatorInsets = insets
         
     }
     
